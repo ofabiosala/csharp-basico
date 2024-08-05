@@ -1,0 +1,14 @@
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.exe
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.deps.json
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.runtimeconfig.json
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.dll
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.pdb
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfo.cs
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.dll
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.dll
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
+D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
