@@ -6,7 +6,7 @@ O .NET, por sua vez, é uma plataforma de desenvolvimento criada pela Microsoft,
 
 ### Hello, World!
 
-Abaixo é apresentado um simples trecho de código na linguagem C# que tem objetivo de exibir em um console (linha de comando) a frase **Hello, World!**.
+Abaixo é apresentado um simples trecho de código na linguagem C# que tem objetivo de exibir em um console (linha de comando) a mensagem **Hello, World!**.
 
 ```C#
 Console.WriteLine("Hello, World!");
@@ -15,7 +15,7 @@ Console.WriteLine("Hello, World!");
 - ``Console`` é uma classe fornecida pelo C# que contém atributos e métodos para realizar operações de entrada e saída no console (linha de comando).
 - ``WriteLine()`` é um método da classe Console usado para escrever um texto no console (linha de comando).
 - ``"Hello, World!"`` é basicamente a mensagem que será exibida no console (linha de comando).
-- ``;`` é um delimitador de instruções em C#. Ele indica o fim da instrução.
+- ``;`` é um delimitador de instruções em C#, ou seja, ele indica o fim de uma instrução.
 
 ### Variáveis
 
@@ -23,19 +23,19 @@ C# é uma linguagem de programação **fortemente tipada**, isso quer dizer que 
 
 Os principais tipos de dados em C# são:
 
-- **int**
-- **double**
-- **char**
-- **string**
-- **bool**
+- ``int`` é um tipo de dado numérico de precisão inteira. Ele armazena números inteiros sem decimais.
+- ``double`` é um tipo de dado numérico de ponto flutuante de precisão dupla. Ele é usado para armazenar números com decimais.
+- ``char`` representa um único caractere Unicode. É usado para armazenar caracteres individuais, como letras, números e símbolos.
+- ``string`` é um tipo de dado que representa uma sequência de caracteres. É usado para armazenar texto.
+- ``bool`` representa um valor booleano, que pode ser ``true`` (verdadeiro) ou ``false`` (falso).
 
 A declaração de uma nova variável em C# deve seguir a seguinte regra:
 
 ```C#
-tipo nomeDaVariavel = valor;
+tipo nome = valor;
 ```
 
-**Exemplo:**
+**Exemplo(s):**
 
 ```C#
 string nome = "Fábio";
@@ -45,7 +45,7 @@ char sexo = "M";
 bool estaSolteiro = true;
 ```
 
-Caso o nome da nova variável seja de forma composta, deve seguir o padrão **CamelCase**, ou seja, iniciar a primeira palavra com a letra **minúscula** e e as demais iniciar com letra **maiúscula**.
+Caso o nome da variável seja composto, deve seguir o padrão **CamelCase**, ou seja, iniciar a primeira palavra com a letra **minúscula** e e as demais iniciar com letra **maiúscula**.
 
 ### Comentários
 
