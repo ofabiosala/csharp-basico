@@ -1,1 +1,3 @@
-﻿Console.WriteLine("Screen Sound");
+﻿string programName = "Screen Sound";
+
+Console.WriteLine(programName);
