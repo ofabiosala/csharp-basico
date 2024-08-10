@@ -12,3 +12,18 @@ D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.d
 D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
 D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
 D:\Nuvem Frisa\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.exe
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.deps.json
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.runtimeconfig.json
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.dll
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\bin\Debug\net8.0\HelloWorld.pdb
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfoInputs.cache
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfo.cs
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.sourcelink.json
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.dll
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.dll
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
+C:\Users\Fabio\dev\csharp-basico\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
