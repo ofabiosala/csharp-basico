@@ -4,24 +4,23 @@ ShowProgramMenu();
 
 string optionSelected = Console.ReadLine()!;
 
-if (optionSelected == "1")
+switch (optionSelected)
 {
-    Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
-}
-
-if (optionSelected == "2")
-{
-    Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
-}
-
-if (optionSelected == "3")
-{
-    Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
-}
-
-if (optionSelected == "0")
-{
-    Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+    case "0":
+        Console.WriteLine("ENCERRANDO A APLICAÇÃO ...");
+        break;
+    case "1":
+        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+        break;
+    case "2":
+        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+        break;
+    case "3":
+        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+        break;
+    default:
+        Console.WriteLine("OPÇÃO INVÁLIDA!");
+        break ;
 }
 
 void ShowProgramName()
