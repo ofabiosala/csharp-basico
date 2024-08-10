@@ -47,6 +47,42 @@ bool estaSolteiro = true;
 
 Caso o nome da variável seja composto, deve seguir o padrão **CamelCase**, ou seja, iniciar a primeira palavra com a letra **minúscula** e e as demais iniciar com letra **maiúscula**.
 
+Caso o conteúdo de uma variável do tipo ``string`` possua muitos caracteres especiais ou quebras de linha, é recomendado a utilização de um tipo especial denominado **Verbatim Literal**. Ele é útil para criar strings que contenham muitas barras invertidas ou que precisam incluir múltiplas linhas.
+
+**Exemplo(s):**
+
+```C#
+string caminhoDoArquivo = @"C:\Usuários\Usuário\Anotações.txt";
+string textoMultilinha = @"Este
+                           texto
+                           possui
+                           várias
+                           linhas
+                           ...";
+
+```
+
+O conteúdo de uma variável do tipo ``string`` pode ser "intercalado" entre strings e variáveis utilizando dois conceitos:
+
+- **Concatenação**
+
+```C#
+string nome = "Fábio";
+Console.WriteLine("Olá, meu nome é " + nome + "."); // Olá, meu nome é Fábio.
+```
+
+- **Interpolação**
+
+```C#
+string nome = "Fábio";
+Console.WriteLine($"Olá, meu nome é {nome}."); // Olá, meu nome é Fábio.
+```
+
+```C#
+string nome = "Fábio";
+Console.WriteLine($"Olá, meu nome é {0}.", nome); // Olá, meu nome é Fábio.
+```
+
 ### Comentários
 
 Existem duas formas de escrever comentários em um código C#:
@@ -67,6 +103,202 @@ em múltiplas linhas
 ...
 
 */
+```
+
+### Funções
+
+A declaração de uma nova função em C# deve seguir a seguinte regra:
+
+```C#
+tipo Nome()
+{
+    // Código ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+void MostrarMeuNome()
+{
+    Console.WriteLine("Fábio");
+}
+
+MostrarMeuNome(); // Fábio
+```
+
+O termo reservado ``void`` indica que a função não irá retornar nenhum valor.
+
+Caso o nome da função seja composto, deve seguir o padrão **PascalCase**, ou seja, todas as palavras devem iniciar com letra **maiúscula**.
+
+### Operadores
+
+#### Comparação
+
+Os principais operadores de comparação em C# são:
+
+``==`` igual à ...
+
+``!=`` diferente de ...
+
+``>`` maior que ...
+
+``<`` menor que ...
+
+``>=`` maior ou igual que ...
+
+``<=`` menor ou igual que ...
+
+### Estruturas de Decisão
+
+#### If ...
+
+A declaração de uma estrutura de decisão ``if ...`` em C# deve seguir a seguinte regra:
+
+```C#
+if (condição)
+{
+    // Código quando a "condição" for verdadeira ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+int idade = 30;
+
+if (idade >= 18)
+{
+    Console.WriteLine("Possui maioridade civil.");
+}
+```
+
+#### If ... Else ...
+
+A declaração de uma estrutura de decisão ``if ... else ...`` em C# deve seguir a seguinte regra:
+
+```C#
+if (condição)
+{
+    // Código quando a "condição" for verdadeira ...
+}
+else
+{
+    // Código quando a "condição" for falsa ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+int idade = 30;
+
+if (idade >= 18)
+{
+    Console.WriteLine("Possui maioridade civil.");
+}
+else
+{
+    Console.WriteLine("Não possui maioridade civil.");
+}
+```
+
+#### If ... Else If ... Else ...
+
+A declaração de uma estrutura de decisão ``if ... else if ... else ...`` em C# deve seguir a seguinte regra:
+
+```C#
+if (condição a)
+{
+    // Código quando a "condição a" for verdadeira ...
+}
+else if (condição b)
+{
+    // Código quando a "condição b" for verdadeira ...
+}
+else
+{
+    // Código quando a "condição a" e a "condição b" for falsa ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+int idade = 30;
+
+if (idade <= 12)
+{
+    Console.WriteLine("Criança.");
+}
+else if (idade <= 17)
+{
+    Console.WriteLine("Adolescente.");
+}
+else if (idade <= 64)
+{
+    Console.WriteLine("Adulto.");
+}
+else
+{
+    Console.WriteLine("Idoso.");
+}
+```
+
+#### Switch
+
+A declaração de uma estrutura de decisão ``switch`` em C# deve seguir a seguinte regra:
+
+```C#
+switch(expressão) 
+{
+    case x:
+        // Código quando a condição for satisfeita ...
+        break;
+    case y:
+        // Código quando a condição for satisfeita ...
+        break;
+
+    ...
+
+    default:
+        // Código quando nenhuma das condições anteriores for satisfeita ...
+        break;
+}
+```
+
+**Exemplo(s):**
+
+```C#
+int dia = 4;
+
+switch (dia)
+{
+    case 1:
+        Console.WriteLine("Segunda-feira");
+        break;
+    case 2:
+        Console.WriteLine("Terça-feira");
+        break;
+    case 3:
+        Console.WriteLine("Quarta-feira");
+        break;
+    case 4:
+        Console.WriteLine("Quinta-feira");
+        break;
+    case 5:
+        Console.WriteLine("Sexta-feira");
+        break;
+    case 6:
+        Console.WriteLine("Sábado");
+        break;
+    case 7:
+        Console.WriteLine("Domingo");
+        break;
+    default:
+        Console.WriteLine("Número inválido. Digite um número de 1 a 7.");
+        break;
+}
 ```
 
 ### Links Úteis
