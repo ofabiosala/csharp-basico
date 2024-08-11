@@ -41,7 +41,7 @@ tipo nome = valor;
 string nome = "Fábio";
 int idade = 30;
 double altura = 1.90;
-char sexo = "M";
+char sexo = 'M';
 bool estaSolteiro = true;
 ```
 
@@ -83,6 +83,24 @@ Console.WriteLine($"Olá, meu nome é {nome}."); // Olá, meu nome é Fábio.
 ```C#
 string nome = "Fábio";
 Console.WriteLine($"Olá, meu nome é {0}.", nome); // Olá, meu nome é Fábio.
+```
+
+A utilização de **aspas simples (')** e **aspas duplas (")** no C# tem aplicações diferentes:
+
+- **Aspas Simples (')**
+
+Aspas simples são usadas para definir caracteres individuais, ou seja, valores do tipo ``char``.
+
+```C#
+char sexo = 'M';
+```
+
+- **Aspas Duplas (")**
+
+Aspas duplas são usadas para definir uma sequência de caracteres, ou seja, valores do tipo ``string``.
+
+```C#
+string nome = "Fábio";
 ```
 
 ### Comentários
