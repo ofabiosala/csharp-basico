@@ -2,27 +2,6 @@
 
 ShowProgramMenu();
 
-string optionSelected = Console.ReadLine()!;
-
-switch (optionSelected)
-{
-    case "0":
-        Console.WriteLine("ENCERRANDO A APLICAÇÃO ...");
-        break;
-    case "1":
-        RegisterNewBand();
-        break;
-    case "2":
-        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
-        break;
-    case "3":
-        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
-        break;
-    default:
-        Console.WriteLine("OPÇÃO INVÁLIDA!");
-        break ;
-}
-
 void ShowProgramName()
 {
     string programName = @"
@@ -49,6 +28,27 @@ void ShowProgramMenu()
     Console.WriteLine("");
 
     Console.Write("DIGITE UMA OPÇÃO: ");
+
+    string optionSelected = Console.ReadLine()!;
+
+    switch (optionSelected)
+    {
+        case "0":
+            Console.WriteLine("ENCERRANDO A APLICAÇÃO ...");
+            break;
+        case "1":
+            RegisterNewBand();
+            break;
+        case "2":
+            Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+            break;
+        case "3":
+            Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+            break;
+        default:
+            Console.WriteLine("OPÇÃO INVÁLIDA!");
+            break;
+    }
 }
 
 void RegisterNewBand()
