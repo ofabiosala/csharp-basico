@@ -10,7 +10,7 @@ switch (optionSelected)
         Console.WriteLine("ENCERRANDO A APLICAÇÃO ...");
         break;
     case "1":
-        Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+        RegisterNewBand();
         break;
     case "2":
         Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
@@ -49,4 +49,18 @@ void ShowProgramMenu()
     Console.WriteLine("");
 
     Console.Write("DIGITE UMA OPÇÃO: ");
+}
+
+void RegisterNewBand()
+{
+    Console.Clear();
+    ShowProgramName();
+    Console.Write("NOME DA BANDA: ");
+    string bandName = Console.ReadLine()!;
+    Console.Write("");
+    Console.Write($"BANDA {bandName} SALVA COM SUCESSO!");
+    Thread.Sleep(2000);
+    Console.Clear();
+    ShowProgramName();
+    ShowProgramMenu();
 }
