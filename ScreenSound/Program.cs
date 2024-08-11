@@ -36,7 +36,7 @@ void ShowProgramMenu()
     switch (optionSelected)
     {
         case "0":
-            Console.WriteLine("ENCERRANDO A APLICAÇÃO ...");
+            EndProgram();
             break;
         case "1":
             RegisterNewBand();
@@ -89,4 +89,12 @@ void ShowBands()
     Console.Clear();
     ShowProgramName();
     ShowProgramMenu();
+}
+
+void EndProgram()
+{
+    Console.Clear();
+    ShowProgramName();
+    Console.WriteLine("");
+    Console.Write("ENCERRANDO A APLICAÇÃO ...");
 }
