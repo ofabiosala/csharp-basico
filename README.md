@@ -45,6 +45,8 @@ char sexo = "M";
 bool estaSolteiro = true;
 ```
 
+C# é **Case Sensitive**, isso significa que ``variavelA`` e ``VariavelA`` por exemplo, são consideradas diferentes devido à sensibilidade a letras **maiúsculas** e **minúsculas**, e ambas podem coexistir sem conflito. Este conceito se aplica a todos os tipos de identificadores como nomes de variáveis, funções, classes e outros elementos do código.
+
 Caso o nome da variável seja composto, deve seguir o padrão **CamelCase**, ou seja, iniciar a primeira palavra com a letra **minúscula** e e as demais iniciar com letra **maiúscula**.
 
 Caso o conteúdo de uma variável do tipo ``string`` possua muitos caracteres especiais ou quebras de linha, é recomendado a utilização de um tipo especial denominado **Verbatim Literal**. Ele é útil para criar strings que contenham muitas barras invertidas ou que precisam incluir múltiplas linhas.
@@ -133,6 +135,16 @@ Caso o nome da função seja composto, deve seguir o padrão **PascalCase**, ou 
 
 ### Operadores
 
+#### Atribuição
+
+Os principais operadores de atribuição em C# são:
+
+``=`` simples
+
+``+=`` adicional
+
+``-=`` subtrativo
+
 #### Comparação
 
 Os principais operadores de comparação em C# são:
@@ -148,6 +160,24 @@ Os principais operadores de comparação em C# são:
 ``>=`` maior ou igual que ...
 
 ``<=`` menor ou igual que ...
+
+#### Matemático
+
+Os principais operadores matemáticos (aritméticos) em C# são:
+
+``+`` adição
+
+``-`` subtração
+
+``*`` multiplicação
+
+``/`` divisão
+
+``%`` módulo (resto)
+
+``++`` incremento
+
+``--`` decremento
 
 ### Estruturas de Decisão
 
@@ -301,8 +331,95 @@ switch (dia)
 }
 ```
 
+### Coleções
+
+#### Listas
+
+A declaração de uma lista em C# deve seguir a seguinte regra:
+
+```C#
+List<tipo> nome = new List<tipo>();
+```
+
+**Exemplo(s):**
+
+```C#
+List<string> paises = new List<string>();
+
+paises.Add("Brasil");
+paises.Add("Áustria");
+paises.Add("Estados Unidos");
+
+Console.WriteLine(paises[0]); // Brasil
+Console.WriteLine(paises[1]); // Áustria
+Console.WriteLine(paises[2]); // Estados Unidos
+```
+
+### Estruturas de Repetição
+
+#### For
+
+A declaração de um ``for`` em C# deve seguir a seguinte regra:
+
+```C#
+for (inicialização; condição; incremento)
+{
+    // Código a ser executado ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+List<string> paises = new List<string>();
+
+paises.Add("Brasil");
+paises.Add("Áustria");
+paises.Add("Estados Unidos");
+
+for (int indice = 0; indice < paises.Count; indice++)
+{
+    Console.WriteLine(paises[indice]);
+}
+
+// Brasil
+// Áustria
+// Estados Unidos
+```
+
+#### ForEach
+
+A declaração de um ``foreach`` em C# deve seguir a seguinte regra:
+
+```C#
+foreach (tipo elemento in colecao)
+{
+    // Código a ser executado para cada elemento ...
+}
+```
+
+**Exemplo(s):**
+
+```C#
+List<string> paises = new List<string>();
+
+paises.Add("Brasil");
+paises.Add("Áustria");
+paises.Add("Estados Unidos");
+
+foreach (string pais in paises)
+{
+    Console.WriteLine(pais);
+}
+
+// Brasil
+// Áustria
+// Estados Unidos
+```
+
 ### Links Úteis
 
 - [C# - Documentação Oficial](https://learn.microsoft.com/pt-br/dotnet/csharp/)
 - [.NET Framework - Documentação Oficial](https://learn.microsoft.com/pt-br/dotnet/framework/)
 - [Tutoriais do Visual Studio](https://learn.microsoft.com/pt-br/visualstudio/get-started/csharp/?view=vs-2022)
+- [W3 Schools - C#](https://www.w3schools.com/cs/index.php)
