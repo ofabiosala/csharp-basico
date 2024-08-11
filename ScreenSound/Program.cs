@@ -74,9 +74,9 @@ void ShowBands()
     ShowProgramName();
     if (bands.Count > 0)
     {
-        for (int index = 0; index < bands.Count; index++)
+        foreach (string band in bands)
         {
-            Console.WriteLine($"BANDA: {bands[index]} - AVALIAÇÃO MÉDIA: {0}");
+            Console.WriteLine($"BANDA: {band} - AVALIAÇÃO MÉDIA: {0}");
         }
     }
     else
