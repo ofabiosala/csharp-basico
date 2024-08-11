@@ -1,4 +1,4 @@
-﻿List<string> bands = new List<string>();
+﻿Dictionary<string, List<int>> bands = new Dictionary<string, List<int>>();
 
 ShowProgramName();
 
@@ -59,7 +59,7 @@ void RegisterNewBand()
     ShowProgramName();
     Console.Write("NOME DA BANDA: ");
     string bandName = Console.ReadLine()!;
-    bands.Add(bandName);
+    bands.Add(bandName, new List<int> { });
     Console.WriteLine("");
     Console.Write($"BANDA {bandName} SALVA COM SUCESSO!");
     Thread.Sleep(2000);
@@ -74,7 +74,7 @@ void ShowBands()
     ShowProgramName();
     if (bands.Count > 0)
     {
-        foreach (string band in bands)
+        foreach (string band in bands.Keys)
         {
             Console.WriteLine($"BANDA: {band} - AVALIAÇÃO MÉDIA: {0}");
         }
