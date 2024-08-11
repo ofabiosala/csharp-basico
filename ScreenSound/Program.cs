@@ -45,7 +45,7 @@ void ShowProgramMenu()
             ShowBands();
             break;
         case "3":
-            Console.WriteLine("OPÇÃO " + optionSelected + " SELECIONADA.");
+            RateBand();
             break;
         default:
             Console.WriteLine("OPÇÃO INVÁLIDA!");
@@ -86,6 +86,31 @@ void ShowBands()
     Console.WriteLine("");
     Console.Write("PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL ...");
     Console.ReadLine();
+    Console.Clear();
+    ShowProgramName();
+    ShowProgramMenu();
+}
+
+void RateBand()
+{
+    Console.Clear();
+    ShowProgramName();
+    Console.Write("NOME DA BANDA: ");
+    string bandName = Console.ReadLine()!;
+    if (bands.ContainsKey(bandName))
+    {
+        Console.Write("NOTA: ");
+        int rate = int.Parse(Console.ReadLine()!);
+        bands[bandName].Add(rate);
+        Console.WriteLine("");
+        Console.Write($"NOTA SALVA COM SUCESSO!");
+        Thread.Sleep(2000);
+    }
+    else
+    {
+        Console.WriteLine("");
+        Console.WriteLine("BANDA NÃO CADASTRADA.");
+    }
     Console.Clear();
     ShowProgramName();
     ShowProgramMenu();
