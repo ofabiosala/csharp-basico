@@ -76,7 +76,14 @@ void ShowBands()
     {
         foreach (string band in bands.Keys)
         {
-            Console.WriteLine($"BANDA: {band} - AVALIAÇÃO MÉDIA: {0}");
+            if (bands[band].Count > 0)
+            {
+                Console.WriteLine($"BANDA: {band} - AVALIAÇÃO MÉDIA: {bands[band].Average()}");
+            }
+            else
+            {
+                Console.WriteLine($"BANDA: {band} - AVALIAÇÃO MÉDIA: S/A");
+            }
         }
     }
     else

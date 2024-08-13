@@ -27,3 +27,4 @@ C:\Users\Fabio\dev\csharp-basico\ScreenSound\obj\Debug\net8.0\refint\ScreenSound
 C:\Users\Fabio\dev\csharp-basico\ScreenSound\obj\Debug\net8.0\ScreenSound.pdb
 C:\Users\Fabio\dev\csharp-basico\ScreenSound\obj\Debug\net8.0\ScreenSound.genruntimeconfig.cache
 C:\Users\Fabio\dev\csharp-basico\ScreenSound\obj\Debug\net8.0\ref\ScreenSound.dll
+D:\Nuvem Frisa\dev\csharp-basico\ScreenSound\obj\Debug\net8.0\ScreenSound.sourcelink.json

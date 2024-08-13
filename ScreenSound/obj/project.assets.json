@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Fabio\\.nuget\\packages\\": {}
+    "C:\\Users\\FabioJCS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fabio\\dev\\csharp-basico\\ScreenSound\\ScreenSound.csproj",
+      "projectUniqueName": "D:\\Nuvem Frisa\\dev\\csharp-basico\\ScreenSound\\ScreenSound.csproj",
       "projectName": "ScreenSound",
-      "projectPath": "C:\\Users\\Fabio\\dev\\csharp-basico\\ScreenSound\\ScreenSound.csproj",
-      "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fabio\\dev\\csharp-basico\\ScreenSound\\obj\\",
+      "projectPath": "D:\\Nuvem Frisa\\dev\\csharp-basico\\ScreenSound\\ScreenSound.csproj",
+      "packagesPath": "C:\\Users\\FabioJCS\\.nuget\\packages\\",
+      "outputPath": "D:\\Nuvem Frisa\\dev\\csharp-basico\\ScreenSound\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FabioJCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,8 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\library-packs": {}
       },
       "frameworks": {
         "net8.0": {
