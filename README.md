@@ -170,8 +170,8 @@ paises.Add("Áustria");
 paises.Add("Brasil");
 paises.Add("Estados Unidos");
 
-Console.WriteLine(paises[1]); // Áustria
-Console.WriteLine(paises[0]); // Brasil
+Console.WriteLine(paises[0]); // Áustria
+Console.WriteLine(paises[1]); // Brasil
 Console.WriteLine(paises[2]); // Estados Unidos
 ```
 
@@ -191,17 +191,17 @@ Os principais operadores de atribuição em C# são:
 
 Os principais operadores de comparação em C# são:
 
-``==`` igual à ...
+``==`` igual
 
-``!=`` diferente de ...
+``!=`` diferente
 
-``>`` maior que ...
+``>`` maior
 
-``<`` menor que ...
+``<`` menor
 
-``>=`` maior ou igual que ...
+``>=`` maior ou igual
 
-``<=`` menor ou igual que ...
+``<=`` menor ou igual
 
 #### Lógicos
 
