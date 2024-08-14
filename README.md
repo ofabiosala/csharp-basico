@@ -1,107 +1,41 @@
 # C# - Básico
 
+Este repositório tem por objetivo registrar anotações e armazenar projetos práticos pertinentes aos meus estudos da linguagem de programação C# básico no curso [C# - Criando Sua Primeira Aplicação](https://www.alura.com.br/curso-online-csharp-criando-primeira-aplicacao) da plataforma de estudos [Alura](https://www.alura.com.br/).
+
+### Sumário
+
+- [A Linguagem](#a-linguagem)
+- [A Plataforma](#a-plataforma)
+- [Hello World](#hello-world)
+- [Comentários](#comentários)
+- [Tipos de Dados](#tipos-de-dados)
+- [Variáveis](#variáveis)
+- [Operadores](#operadores)
+- [Estruturas de Condição](#estruturas-de-condição)
+- [Estruturas de Repetição](#estruturas-de-repetição)
+- [Funções](#funções)
+- [Links Úteis](#links-úteis)
+
+### A Linguagem
+
 **C#** é uma linguagem de programação moderna, robusta e de propósito geral, desenvolvida pela **Microsoft**. Ela foi projetada para ser simples, eficiente e orientada a objetos. C# oferece recursos avançados de programação, como tratamento de exceções, coleta de lixo automática e suporte a tipos de dados avançados, além de ser altamente integrada com o ecossistema **.NET**.
+
+### A Plataforma
 
 O .NET, por sua vez, é uma plataforma de desenvolvimento criada pela Microsoft, que inclui uma vasta coleção de bibliotecas, ferramentas e componentes para construir e executar aplicativos em diferentes sistemas operacionais e plataformas.
 
-### Hello, World!
+### Hello World
 
-Abaixo é apresentado um simples trecho de código na linguagem C# que tem objetivo de exibir em um console (linha de comando) a mensagem **Hello, World!**.
+Abaixo é apresentado um simples trecho de código na linguagem C# que tem objetivo de exibir em um console (linha de comando) a famosa mensagem **Hello, World!**.
 
 ```C#
 Console.WriteLine("Hello, World!");
 ```
 
 - ``Console`` é uma classe fornecida pelo C# que contém atributos e métodos para realizar operações de entrada e saída no console (linha de comando).
-- ``WriteLine()`` é um método da classe Console usado para escrever um texto no console (linha de comando).
+- ``WriteLine`` é um método da classe Console usado para escrever um texto no console (linha de comando).
 - ``"Hello, World!"`` é basicamente a mensagem que será exibida no console (linha de comando).
 - ``;`` é um delimitador de instruções em C#, ou seja, ele indica o fim de uma instrução.
-
-### Variáveis
-
-C# é uma linguagem de programação **fortemente tipada**, isso quer dizer que cada variável declarada deve receber um tipo.
-
-Os principais tipos de dados em C# são:
-
-- ``int`` é um tipo de dado numérico de precisão inteira. Ele armazena números inteiros sem decimais.
-- ``double`` é um tipo de dado numérico de ponto flutuante de precisão dupla. Ele é usado para armazenar números com decimais.
-- ``char`` representa um único caractere Unicode. É usado para armazenar caracteres individuais, como letras, números e símbolos.
-- ``string`` é um tipo de dado que representa uma sequência de caracteres. É usado para armazenar texto.
-- ``bool`` representa um valor booleano, que pode ser ``true`` (verdadeiro) ou ``false`` (falso).
-
-A declaração de uma nova variável em C# deve seguir a seguinte regra:
-
-```C#
-tipo nome = valor;
-```
-
-**Exemplo(s):**
-
-```C#
-string nome = "Fábio";
-int idade = 30;
-double altura = 1.90;
-char sexo = 'M';
-bool estaSolteiro = true;
-```
-
-C# é **Case Sensitive**, isso significa que ``variavelA`` e ``VariavelA`` por exemplo, são consideradas diferentes devido à sensibilidade a letras **maiúsculas** e **minúsculas**, e ambas podem coexistir sem conflito. Este conceito se aplica a todos os tipos de identificadores como nomes de variáveis, funções, classes e outros elementos do código.
-
-Caso o nome da variável seja composto, deve seguir o padrão **CamelCase**, ou seja, iniciar a primeira palavra com a letra **minúscula** e e as demais iniciar com letra **maiúscula**.
-
-Caso o conteúdo de uma variável do tipo ``string`` possua muitos caracteres especiais ou quebras de linha, é recomendado a utilização de um tipo especial denominado **Verbatim Literal**. Ele é útil para criar strings que contenham muitas barras invertidas ou que precisam incluir múltiplas linhas.
-
-**Exemplo(s):**
-
-```C#
-string caminhoDoArquivo = @"C:\Usuários\Usuário\Anotações.txt";
-string textoMultilinha = @"Este
-                           texto
-                           possui
-                           várias
-                           linhas
-                           ...";
-
-```
-
-O conteúdo de uma variável do tipo ``string`` pode ser "intercalado" entre strings e variáveis utilizando dois conceitos:
-
-- **Concatenação**
-
-```C#
-string nome = "Fábio";
-Console.WriteLine("Olá, meu nome é " + nome + "."); // Olá, meu nome é Fábio.
-```
-
-- **Interpolação**
-
-```C#
-string nome = "Fábio";
-Console.WriteLine($"Olá, meu nome é {nome}."); // Olá, meu nome é Fábio.
-```
-
-```C#
-string nome = "Fábio";
-Console.WriteLine($"Olá, meu nome é {0}.", nome); // Olá, meu nome é Fábio.
-```
-
-A utilização de **aspas simples (')** e **aspas duplas (")** no C# tem aplicações diferentes:
-
-- **Aspas Simples (')**
-
-Aspas simples são usadas para definir caracteres individuais, ou seja, valores do tipo ``char``.
-
-```C#
-char sexo = 'M';
-```
-
-- **Aspas Duplas (")**
-
-Aspas duplas são usadas para definir uma sequência de caracteres, ou seja, valores do tipo ``string``.
-
-```C#
-string nome = "Fábio";
-```
 
 ### Comentários
 
@@ -125,31 +59,121 @@ em múltiplas linhas
 */
 ```
 
-### Funções
+### Tipos de Dados
 
-A declaração de uma nova função em C# deve seguir a seguinte regra:
+C# é uma linguagem de programação **fortemente tipada**, isso permite que um novo dado receba um tipo no momento de sua instância.
+
+Os principais tipos de dados em C# são:
+
+#### int
+
+``int`` é um tipo de dado numérico de precisão inteira. Ele armazena números inteiros sem decimais.
+
+#### double
+
+``double`` é um tipo de dado numérico de ponto flutuante de precisão dupla. Ele é usado para armazenar números com decimais.
+
+#### char
+
+``char`` representa um único caractere UNICODE. É usado para armazenar caracteres individuais, como letras, números e símbolos.
+
+> Ao declarar um caractere ``char`` deve-se utilizar aspas simples (').
+
+#### string
+
+``string`` é um tipo de dado que representa uma sequência de caracteres. É usado para armazenar texto.
+
+> Ao declarar uma ``string`` deve-se utilizar aspas duplas (").
+
+#### Concatenação
+
+Consiste em unir duas ou mais strings para formar uma nova string utilizando o operador ``+``.
+
+**Exemplo:**
 
 ```C#
-tipo Nome()
-{
-    // Código ...
-}
+string nome = "Fábio";
+Console.WriteLine("Olá, meu nome é " + nome + "."); // Olá, meu nome é Fábio.
 ```
 
-**Exemplo(s):**
+#### Interpolação
+
+Consiste em unir duas ou mais strings para formar uma nova string de uma forma mais moderna e legível utilizando o operador ``$`` antes das aspas que delimitam a string.
+
+**Exemplo:**
 
 ```C#
-void MostrarMeuNome()
-{
-    Console.WriteLine("Fábio");
-}
-
-MostrarMeuNome(); // Fábio
+string nome = "Fábio";
+Console.WriteLine($"Olá, meu nome é {nome}."); // Olá, meu nome é Fábio.
 ```
 
-O termo reservado ``void`` indica que a função não irá retornar nenhum valor.
+```C#
+string nome = "Fábio";
+Console.WriteLine($"Olá, meu nome é {0}.", nome); // Olá, meu nome é Fábio.
+```
 
-Caso o nome da função seja composto, deve seguir o padrão **PascalCase**, ou seja, todas as palavras devem iniciar com letra **maiúscula**.
+#### Verbatim Literal
+
+Consiste em incluir caracteres especiais, como quebras de linha e barras invertidas, sem precisar de escape. Isso é feito usando o prefixo ``@`` antes das aspas que delimitam a string.
+
+**Exemplo:**
+
+```C#
+string caminhoDoArquivo = @"C:\Usuários\Usuário\Anotações.txt";
+string textoMultilinha = @"Linha 1
+                           Linha 2
+                           Linha 3";
+```
+
+#### bool
+
+``bool`` representa um valor booleano, que pode ser ``true`` (verdadeiro) ou ``false`` (falso).
+
+### Variáveis
+
+A declaração de uma nova variável em C# deve seguir a seguinte regra:
+
+```C#
+tipo nome = valor;
+```
+
+**Exemplo:**
+
+```C#
+string nome = "Fábio";
+int idade = 30;
+double altura = 1.90;
+char sexo = 'M';
+bool estaSolteiro = true;
+```
+
+> C# é **Case Sensitive**. Isso significa que as variáveis ``variavelA`` e ``VariavelA`` por exemplo, são consideradas diferentes devido à sensibilidade a letras **maiúsculas** e **minúsculas**, e ambas podem coexistir sem conflito. Este conceito se aplica a todos os tipos de identificadores como nomes de variáveis, funções, classes e outros elementos do código.
+
+> O nome da variável deve seguir o padrão **CamelCase**. Isso significa que se o nome da variável for composto deve-se iniciar a primeira palavra com a letra **minúscula** e as demais iniciar com a letra **maiúscula**.
+
+### Coleções
+
+#### Listas
+
+A declaração de uma lista em C# deve seguir a seguinte regra:
+
+```C#
+List<tipo> nome = new List<tipo>();
+```
+
+**Exemplo:**
+
+```C#
+List<string> paises = new List<string>();
+
+paises.Add("Áustria");
+paises.Add("Brasil");
+paises.Add("Estados Unidos");
+
+Console.WriteLine(paises[1]); // Áustria
+Console.WriteLine(paises[0]); // Brasil
+Console.WriteLine(paises[2]); // Estados Unidos
+```
 
 ### Operadores
 
@@ -179,7 +203,17 @@ Os principais operadores de comparação em C# são:
 
 ``<=`` menor ou igual que ...
 
-#### Matemático
+#### Lógicos
+
+Os principais operadores lógicos em C# são:
+
+``&&`` e
+
+``||`` ou
+
+``!`` negação
+
+#### Matemáticos
 
 Os principais operadores matemáticos (aritméticos) em C# são:
 
@@ -197,11 +231,11 @@ Os principais operadores matemáticos (aritméticos) em C# são:
 
 ``--`` decremento
 
-### Estruturas de Decisão
+### Estruturas de Condição
 
-#### If ...
+#### If
 
-A declaração de uma estrutura de decisão ``if ...`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de condição ``if ...`` em C# deve seguir a seguinte regra:
 
 ```C#
 if (condição)
@@ -210,7 +244,7 @@ if (condição)
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
 int idade = 30;
@@ -223,7 +257,7 @@ if (idade >= 18)
 
 #### If ... Else ...
 
-A declaração de uma estrutura de decisão ``if ... else ...`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de condição ``if ... else ...`` em C# deve seguir a seguinte regra:
 
 ```C#
 if (condição)
@@ -236,7 +270,7 @@ else
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
 int idade = 30;
@@ -253,7 +287,7 @@ else
 
 #### If ... Else If ... Else ...
 
-A declaração de uma estrutura de decisão ``if ... else if ... else ...`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de condição ``if ... else if ... else ...`` em C# deve seguir a seguinte regra:
 
 ```C#
 if (condição a)
@@ -270,7 +304,7 @@ else
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
 int idade = 30;
@@ -295,7 +329,7 @@ else
 
 #### Switch
 
-A declaração de uma estrutura de decisão ``switch`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de condição ``switch`` em C# deve seguir a seguinte regra:
 
 ```C#
 switch(expressão) 
@@ -315,7 +349,7 @@ switch(expressão)
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
 int dia = 4;
@@ -349,80 +383,52 @@ switch (dia)
 }
 ```
 
-### Coleções
-
-#### Listas
-
-A declaração de uma lista em C# deve seguir a seguinte regra:
-
-```C#
-List<tipo> nome = new List<tipo>();
-```
-
-**Exemplo(s):**
-
-```C#
-List<string> paises = new List<string>();
-
-paises.Add("Brasil");
-paises.Add("Áustria");
-paises.Add("Estados Unidos");
-
-Console.WriteLine(paises[0]); // Brasil
-Console.WriteLine(paises[1]); // Áustria
-Console.WriteLine(paises[2]); // Estados Unidos
-```
-
 ### Estruturas de Repetição
 
 #### For
 
-A declaração de um ``for`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de repetição ``for`` em C# deve seguir a seguinte regra:
 
 ```C#
 for (inicialização; condição; incremento)
 {
-    // Código a ser executado ...
+    // Código a ser executado enquanto a condição for verdadeira ...
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
-List<string> paises = new List<string>();
-
-paises.Add("Brasil");
-paises.Add("Áustria");
-paises.Add("Estados Unidos");
-
-for (int indice = 0; indice < paises.Count; indice++)
+for (int indice = 0; indice < 5; indice++)
 {
-    Console.WriteLine(paises[indice]);
+    Console.WriteLine("Fábio");
 }
 
-// Brasil
-// Áustria
-// Estados Unidos
+// Fábio
+// Fábio
+// Fábio
+// Fábio
+// Fábio
 ```
 
 #### ForEach
 
-A declaração de um ``foreach`` em C# deve seguir a seguinte regra:
+A declaração de uma estrutura de repetição ``foreach`` em C# deve seguir a seguinte regra:
 
 ```C#
-foreach (tipo elemento in colecao)
+foreach (tipo elemento in coleção)
 {
-    // Código a ser executado para cada elemento ...
+    // Código a ser executado para cada elemento da coleção ...
 }
 ```
 
-**Exemplo(s):**
+**Exemplo:**
 
 ```C#
 List<string> paises = new List<string>();
 
-paises.Add("Brasil");
 paises.Add("Áustria");
+paises.Add("Brasil");
 paises.Add("Estados Unidos");
 
 foreach (string pais in paises)
@@ -430,10 +436,36 @@ foreach (string pais in paises)
     Console.WriteLine(pais);
 }
 
-// Brasil
 // Áustria
+// Brasil
 // Estados Unidos
 ```
+
+### Funções
+
+A declaração de uma nova função em C# deve seguir a seguinte regra:
+
+```C#
+tipo Nome()
+{
+    // Código ...
+}
+```
+
+**Exemplo:**
+
+```C#
+void MostrarMeuNome()
+{
+    Console.WriteLine("Fábio");
+}
+
+MostrarMeuNome(); // Fábio
+```
+
+> O termo reservado ``void`` indica que a função não irá retornar nenhum valor.
+
+> O nome da função deve seguir o padrão **PascalCase**. Isso significa que se o nome da função for composto todas as palavras devem iniciar com letra **maiúscula**.
 
 ### Links Úteis
 
